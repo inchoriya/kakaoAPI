@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="inchoriya" />
+    <meta name="description" content="KAKAO MAP1" />
+    <title>KAKAO MAP1</title>
+</head>
+
+<body>
+    <!-- 지도를 담을 영역 만들기 -->
+    <div id="map" style="width: 60%; height: 450px;"></div>
+</body>
+
+<!-- 실제 지도를 그리는 JavaScript API를 불러오기 -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab9639a4d67dc618f8716df584ad9405"></script>
+
+<!-- 지도를 띄우는 코드 작성-->
+<script>
+    let container = document.getElementById('map'); //지도를 담을 영역
+    let options = {
+        center : new kakao.maps.LatLng(37.4389209486677, 126.67505030685592),  // 지도의 중심좌표
+        level : 3   //지도의 레벨(확대, 축소 정도)
+    }   // 지도를 생성할 때 필요한 기본 옵션
+
+    let map = new kakao.maps.Map(container, options);   // 지도를 생성
+    // 위도(latitude) : lat , 경도 (longitude)
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
